@@ -6,7 +6,6 @@ async function fetchData() {
         const response = await fetch(URL);
         const rolls = await response.json();
         renderRolls(rolls);
-        renderAdditionalRolls(); // Добавляем новые товары для корзины
     } catch (error) {
         console.error("Ошибка загрузки данных:", error);
     }
