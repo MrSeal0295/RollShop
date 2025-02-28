@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин роллов</title>
+	<link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/style/css/main.css">
+	<link rel="stylesheet" href="/assets/style/css/footer.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="/assets/image/logo/logo.svg" width="92" alt="Суши и пицца">
+			<div class="display-4">Доставка роллов</div>
+			<p class="lead">Оперативно и вкусно</p>
+			<input class="search" type="search" id="search" name="q" placeholder="Поиск..." onkeyup="filterSearch()">
+		</div>
+	</header>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="01" data-name="Филадельфия хит ролл">
+							<img class="product-img" src="/assets/image/roll/philadelphia.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Филадельфия хит ролл</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">180г.</div>
+										<div class="price__currency">300 ₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="02" data-name="Калифорния темпура">
+							<img class="product-img" src="/assets/image/roll/california-tempura.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Калифорния темпура</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">205г.</div>
+										<div class="price__currency">250 ₽</div>
+									</div>
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="03" data-name="Запеченый ролл «Калифорния»">
+							<img class="product-img" src="/assets/image/roll/zapech-california.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Запеченый ролл «Калифорния»</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">182г.</div>
+										<div class="price__currency">230 ₽</div>
+									</div>
+
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ в корзину</button>
+
+							</div>
+						</div>
+					</div>
+					<!-- // Ролл -->
+
+					<!-- Ролл -->
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="04" data-name="Филадельфия">
+							<img class="product-img" src="/assets/image/roll/philadelphia.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Филадельфия</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="price__weight">230г.</div>
+										<div class="price__currency">320 ₽</div>
+									</div>
+
+								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ в корзину
+								</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+						<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+						<div class="cart-wrapper">
+
+						</div>
+						<div class="cart-total">
+							<p data-cart-delivery class="none"><span class="h5">Доставка:</span> <span class="delivery-cost">100 ₽</span> </p>
+							<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
+						</div>
+					</div>
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Заказать</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h2><a href="/src/about.html" class="about-link">О компании</a></h2>
+					<p>Мы — ведущая малая компания в сфере продаж роллов. Работаем с 2025 года, предлагая только лучшее для наших клиентов.</p>
+				</div>
+	
+				<div class="footer-section contacts">
+					<h2>Контакты</h2>
+					<p><strong>Телефон:</strong> +7 (962) 932-04-79</p>
+					<p><strong>Email:</strong> info@gmail.com</p>
+					<p><strong>Адрес:</strong> ул. Тут, 10, Москва</p>
+				</div>
+	
+				<div class="footer-section social">
+					<h2>Мы в соцсетях</h2>
+					<a href="https://vk.com/viktorburda"><img src="/assets/image/logo/VK.svg" alt="VK"></a>
+					<a href="https://www.instagram.com/"><img src="/assets/image/logo/instagram.svg" alt="Instagram"></a>
+					<a href="https://t.me/rollsshoping"><img src="/assets/image/logo/telegram.svg" alt="Telegram"></a>
+				</div>
+			</div>
+	
+			<div class="footer-bottom">
+				<p>© 2025 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/assets/scripts/js/search.js"></script>
+	<script src="/assets/scripts/js/mockapi.js"></script>
+	<script src="/assets/scripts/js/priceCalculator.js"></script>
+	<script src="/assets/scripts/js/cartStatus.js"></script>
+	<script src="/assets/scripts/js/script.js"></script>
+	<script src="/assets/scripts/js/cart.js"></script>
+
+</body>
+
+</html>
